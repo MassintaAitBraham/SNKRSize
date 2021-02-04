@@ -3,41 +3,32 @@
 {% block title %}Shoe index{% endblock %}
 
 {% block body %}
-    <h1>Shoe index</h1>
+        <a class="login" href="{{ path('app_login') }}">Connexion</a>
+        <a class="register" href="{{ path('app_register') }}">Inscription</div></a>
+<div class="header"> 
+        <p>SNKRSize</p>
+        <a href="/"><img src="{{ '/build/images/logo.png' }}"/></a>
+</div>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Brand</th>
-                <th>Color</th>
-                <th>Size</th>
-                <th>Type</th>
-                <th>Price</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for shoe in shoes %}
-            <tr>
-                <td>{{ shoe.id }}</td>
-                <td>{{ shoe.brand }}</td>
-                <td>{{ shoe.color }}</td>
-                <td>{{ shoe.size }}</td>
-                <td>{{ shoe.type }}</td>
-                <td>{{ shoe.price }}</td>
-                <td>
-                    <a href="{{ path('shoe_show', {'id': shoe.id}) }}">show</a>
-                    <a href="{{ path('shoe_edit', {'id': shoe.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="7">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+<a class="add" href="{{ path('shoe_new') }}">Ajouter une paire</div></a>
 
-    <a href="{{ path('shoe_new') }}">Create new</a>
+    <h1 class="titre">Cherche ta sneakers</h1>
+<div class="container-card">    
+    {% for shoe in shoes %}
+        <div class="card" 
+        style="width: 25rem; margin: 3rem; background-color: #ff113b ;border-radius: 26px;
+        box-shadow: 20px 20px 40px #696969,
+        -20px -20px 40px #ffffff;">
+            <img style="height: 40vh; width: 100%;" src="{{shoe.picture}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ shoe.brand }}</h5>
+                <p class="card-text">Couleur: {{ shoe.color}}<br>
+                Taille: {{ shoe.size}}<br>
+                État: {{ shoe.type}}<br>
+                Prix: {{ shoe.price}}€</p>
+                <a href="{{ path('shoe_edit', {'id': shoe.id}) }}">Modifier</a>
+            </div>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}

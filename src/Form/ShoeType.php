@@ -17,6 +17,7 @@ class ShoeType extends AbstractType
             ->add('size')
             ->add('type')
             ->add('price')
+            ->add('picture')
         ;
     }
 
