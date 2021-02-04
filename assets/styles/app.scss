@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+.header {
+    z-index: 1;
+    background-color: #e60023;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    box-shadow: 0px 5px 19px -8px #aeaeae;
+    -webkit-box-shadow: 0px 5px 19px -8px #aeaeae;
+    -moz-box-shadow: 0px 5px 19px -8px #aeaeae;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo img {
+    height: 130px;
+    width: auto;
+}
+
+.banner-title {
+    font-size: 50px;
+    width: 100rem;
+    padding-top: 15rem;
+    font-family: montserrat;
+    font-weight: 900;
+    color: black;
+    margin-right: 30%;
+}
+
+.login{
+    padding-top:-10rem;
+    margin-left: 90%;
+}
+
+.register{
+    padding-top:-10rem;
+    margin-left: 90%; 
+}
+
+.add{
+    margin-right: 90%;
+}
