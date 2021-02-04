@@ -3,32 +3,32 @@
 {% block title %}Shoe{% endblock %}
 
 {% block body %}
-    <h1>Shoe</h1>
+    {# <h1>Shoe</h1>
 
     <table class="table">
         <tbody>
-            <tr>
+            {# <tr>
                 <th>Id</th>
                 <td>{{ shoe.id }}</td>
-            </tr>
-            <tr>
-                <th>Brand</th>
+            </tr> #}
+            {# <tr>
+                <th>Marque</th>
                 <td>{{ shoe.brand }}</td>
             </tr>
             <tr>
-                <th>Color</th>
+                <th>Couleur</th>
                 <td>{{ shoe.color }}</td>
             </tr>
             <tr>
-                <th>Size</th>
+                <th>Taille</th>
                 <td>{{ shoe.size }}</td>
             </tr>
             <tr>
-                <th>Type</th>
+                <th>État</th>
                 <td>{{ shoe.type }}</td>
             </tr>
             <tr>
-                <th>Price</th>
+                <th>Prix</th>
                 <td>{{ shoe.price }}</td>
             </tr>
         </tbody>
@@ -38,5 +38,5 @@
 
     <a href="{{ path('shoe_edit', {'id': shoe.id}) }}">edit</a>
 
-    {{ include('shoe/_delete_form.html.twig') }}
+    {{ include('shoe/_delete_form.html.twig') }} #} #}
 {% endblock %}
