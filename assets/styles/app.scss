@@ -1,49 +1,69 @@
+@font-face {
+    font-family: "Randhu";
+    src: url("../fonts/Randhu.ttf") format("truetype")
+}
 body {
     margin: 0;
     font-size: 20px;
     text-align: center;
 }
 .header {
-    z-index: 1;
-    background-color: #e60023;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 150px;
+    background-color:#ff113b;
+    height: 20vh;
+    margin-top: 3rem;
     box-shadow: 0px 5px 19px -8px #aeaeae;
     -webkit-box-shadow: 0px 5px 19px -8px #aeaeae;
     -moz-box-shadow: 0px 5px 19px -8px #aeaeae;
 }
 
-.logo {
-    width: 50%;
-}
-
-.logo img {
-    height: 130px;
+.header img {
+    height: 40vh;
     width: auto;
+    margin-top: -20%;
 }
 
-.banner-title {
-    font-size: 50px;
-    width: 100rem;
-    padding-top: 15rem;
-    font-family: montserrat;
-    font-weight: 900;
-    color: black;
-    margin-right: 30%;
+.header p{
+    color: white;
+    font-size: 90px;
+    margin-top: 1rem;
+    margin-right: 70%;
+    font-family:randhu;
 }
 
 .login{
-    padding-top:-10rem;
-    margin-left: 90%;
+    text-decoration: none;
+    margin-left: 80%;
+    padding: 1rem;
+    color:black;
+    font-family:randhu;
 }
 
 .register{
-    padding-top:-10rem;
-    margin-left: 90%; 
+    text-decoration: none;
+    color:black;
+    font-family:randhu;
 }
 
 .add{
-    margin-right: 90%;
+    margin-left: 75%;
+    text-decoration: none;
+    color:white;
+    font-family:randhu;
+    font-size: 2rem;
+    background-color:black;
+    padding: 1rem;
+}
+.titre{
+    color:black;
+    font-family:randhu;
+    font-size: 60px;
+    padding: 1rem;
+}
+
+.container-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+}
+.card-text{
+    color: white;
 }
